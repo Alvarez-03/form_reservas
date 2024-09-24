@@ -1,0 +1,12 @@
+body{
+ font-size: 20px;
+}
+section{
+    width: fit-content; 
+    display: block; 
+    margin: 0 auto;
+}
+#boton-enviar{
+    text-align: center;
+    margin-top: 10px;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de reservas</title>
+    <link rel="stylesheet" href="reservas.css">
+</head>
+<body>
+    <section >
+        <header>
+            <h1>Reserva de plaza</h1>
+        </header>
+        <form id="formreserva" action="" method="post">
+            <fieldset>
+                <legend><b>Datos del participante</b></legend>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="txtnombre" id="nombre" pattern="[A-Z][a-z]+\s[A-Z][a-z]" required><br>
+                <label for="telefono">Telefono</label>
+                <input type="tel" name="telefono" id="telefono" required>
+                <p>pertenece al club? </p>
+                <div>
+                    <input type="radio" name="mienbro" value="Si" checked>Si pertenezco
+                    <input type="radio" name="mienbro" value="No" checked>No pertenezco
+                </div><br>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+            </fieldset>
+            <fieldset>
+                <legend><b>Datos de la reserva</b></legend>
+                <label for="deporte">Deporte</label>
+                <select name="Deporte" id="Deporte">
+                    <option value="Futbol">Futbol</option>
+                    <option value="Padel">Padel</option>
+                    <option value="Baloncesto">Baloncesto</option>
+                    <option value="Tenis">Tenis</option>
+                </select>
+                <p>Selecionar dia y hora de la reserva</p>
+                <input type="date" name="diares" required>
+                <input type="time" name="horares" required><br><br>
+                <input type="checkbox" name="terminos" id="terminos" required>
+                <label for="terminos">Acepto las normas del club</label><br><br>
+            </fieldset>
+            <div id="boton-enviar">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
